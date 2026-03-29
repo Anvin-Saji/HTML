@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Layout</title>
+  <style>
+    .container {
+      display: grid;
+      gap: 10px;
+      padding: 10px;
+    }
+
+    header, footer {
+      background: #ddd;
+      text-align: center;
+      padding: 20px;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    main div {
+      background: #bbb;
+      text-align: center;
+      padding: 20px;
+    }
+    @media (max-width: 600px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>Header</header>
+    <main>
+      <div>Column 1</div>
+      <div>Column 2</div>
+      <div>Column 3</div>
+    </main>
+    <footer>Footer</footer>
+  </div>
+</body>
+</html>

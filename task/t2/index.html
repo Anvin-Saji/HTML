@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    header, footer {
+      text-align: center;
+      background: #ddd;
+      padding: 10px;
+    }
+    section { margin: 20px 0; }
+
+    table {
+      width: 100%;
+      border: 1px solid black;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 6px;
+      text-align: center;
+    }
+
+    form {
+      border: 1px solid black;
+      padding: 10px;
+    }
+    label {
+      display: block;
+      margin-top: 8px;
+    }
+    input[type="text"], select {
+      width: 100%;
+      padding: 5px;
+      margin-top: 3px;
+    }
+    .checkbox-group label {
+      display: inline-block;
+      margin-right: 10px;
+    }
+    input[type="submit"] {
+      margin-top: 10px;
+      padding: 6px 12px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Student Information</h1>
+  </header>
+
+  <section>
+    <h2>Student List</h2>
+    <table>
+      <tr>
+        <th>Name</th>
+        <th>Grade</th>
+        <th>Age</th>
+      </tr>
+      <tr>
+        <td>Alice</td>
+        <td>A</td>
+        <td>16</td>
+    </tr>
+      <tr>
+        <td>Bob</td>
+        <td>B</td>
+        <td>17</td>
+    </tr>
+      <tr>
+        <td>Charlie</td>
+        <td>A</td>
+        <td>15</td>
+    </tr>
+    </table>
+    <h2>Registration Form</h2>
+    <form>
+      <label>Name:</label>
+      <input type="text" name="name">
+
+      <label>Grade:</label>
+      <select name="grade">
+        <option>A</option>
+        <option>B</option>
+        <option>C</option>
+      </select>
+
+      <label>Subjects:</label>
+      <div class="checkbox-group">
+        <label><input type="checkbox" name="subject" value="Math"> Math</label>
+        <label><input type="checkbox" name="subject" value="Science"> Science</label>
+        <label><input type="checkbox" name="subject" value="English"> English</label>
+      </div>
+
+      <input type="submit" value="Submit">
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Student Portal</p>
+  </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,106 @@
+/* General Page Style */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+h2 {
+    margin-top: 25px;
+    color: #34495e;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Paragraphs */
+p {
+    margin-bottom: 15px;
+}
+
+/* Image */
+img {
+    display: block;
+    margin: 15px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Links */
+a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+/* Ordered List */
+ol {
+    margin-left: 25px;
+    padding: 5px 0;
+}
+
+/* Form Container */
+form {
+    background: #fff;
+    padding: 20px;
+    max-width: 400px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+/* Labels & Inputs */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+input[type="submit"]:hover {
+    background: #2980b9;
+}
+
+/* Error Messages */
+form p {
+    margin-top: 5px;
+    color: red;
+    font-size: 14px;
+}

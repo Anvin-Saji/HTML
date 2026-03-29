@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple semantic page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Ariel, sans-serif;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding:1rem;
+            text-align: center;
+            position: fixed;
+            /*stays on top*/
+            width: 100%;
+            top: 0;
+            left: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 0.5rem;
+            text-align: center;
+            margin-top: 60px;
+            /* to avoid overlapping with header*/
+            position: sticky;
+            top: 60px;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 2rem;
+            position: relative;
+        }
+
+        section {
+            margin-bottom: #f4f4f4;
+            padding: 1rem;
+            position: relative;
+        }
+
+        .note {
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: yellow;
+            padding: 5px;
+            font-size: 0.8rem;
+        }
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Semantic Webpage</h1>
+    </header>
+    <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+
+    </nav>
+    <main>
+        <section>
+            <h2>Welcome Section</h2>
+            <p>This is a simple semantic Section with absolutely positioned note box.</p>
+            <div class="note">Pinned Note</div>
+        </section>
+        <section>
+            <h2>Another section</h2>
+            <p>This demonstrates semantic HTML and how we can use CSS position properties.</p>
+
+        </section>
+        <section>
+            <h2>Another section</h2>
+            <p>This demonstrates semantic HTML and how we can use CSS position properties.</p>
+
+        </section>
+        <section>
+            <h2>Another section</h2>
+            <p>This demonstrates semantic HTML and how we can use CSS position properties.</p>
+
+        </section>
+        <section>
+            <h2>Another section</h2>
+            <p>This demonstrates semantic HTML and how we can use CSS position properties.</p>
+
+        </section>
+        <section>
+            <h2>Another section</h2>
+            <p>This demonstrates semantic HTML and how we can use CSS position properties.</p>
+
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 My Website</p>
+    </footer>
+</body>
+
+</html>

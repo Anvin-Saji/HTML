@@ -1,0 +1,8 @@
+section {
+    box-sizing: border_box;
+    background-color: antiquewhite;
+    height: 200px;
+    width: 200px;
+    padding: 20px solid black;
+    margin: 25px
+}

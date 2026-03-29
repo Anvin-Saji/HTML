@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hi</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 10px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-areas:
+        "header header"
+        "main aside"
+        "footer footer";
+      grid-template-columns: 2fr 1fr;
+      gap: 10px;
+    }
+
+    header { grid-area: header; background: #eee; padding: 10px; }
+    main   { grid-area: main; background: #fafafa; padding: 10px; }
+    aside  { grid-area: aside; background: #ddd; padding: 10px; }
+    footer { grid-area: footer; background: #ccc; padding: 10px; text-align: center; }
+
+    .flex-demo {
+      display: flex;
+      gap: 10px;
+      margin-top: 10px;
+    }
+    .flex-demo div {
+      flex: 1;
+      padding: 20px;
+      background: #999;
+      color: white;
+      text-align: center;
+    }
+
+    (max-width: 700px) {
+      .container {
+        grid-template-areas:
+          "header"
+          "main"
+          "aside"
+          "footer";
+        grid-template-columns: 1fr;
+      }
+      .flex-demo {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>My Webpage</h1>
+    </header>
+
+    <main>
+      <p>Main content goes here.</p>
+      <div class="flex-demo">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+      </div>
+    </main>
+
+    <aside>
+      Sidebar content
+    </aside>
+
+    <footer>
+      Footer content
+    </footer>
+  </div>
+</body>
+</html>

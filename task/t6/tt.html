@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>T6</title>
+  <style>
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .row {
+      display: flex;
+      gap: 10px;
+    }
+
+    .row:first-child .col {
+      flex: 1; 
+    }
+
+    .row:last-child .col {
+      flex: 1 0 100%;
+    }
+
+    .col {
+      padding: 20px;
+      background: #ddd;
+      text-align: center;
+    }
+
+     {
+      .row {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col">Column 1</div>
+      <div class="col">Column 2</div>
+    </div>
+    <div class="row">
+      <div class="col">Full-width column</div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sticky Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      height: 2000px; 
+    }
+
+    /* Make the link fixed in one place */
+    .sticky-link {
+      position: fixed;   /* keeps it in the viewport */
+      top: 20px;         /* distance from top */
+      left: 20px;       /* distance from right */
+      background: purple;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 5px;
+      text-decoration: none;
+    }
+
+    .sticky-link:hover {
+      background: darkmagenta;
+    }
+  </style>
+</head>
+<body>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maxime, non.</p>
+  <a href="" class="sticky-link">Sticky</a>
+
+  <h1>Scroll down</h1>
+  <p>Keep scrolling... the sticky link stays in the top-right corner.</p>
+</body>
+</html>

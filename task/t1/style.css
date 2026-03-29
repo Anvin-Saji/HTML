@@ -1,0 +1,98 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f8fc;
+    margin: 20px;
+    padding: 0;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Heading styles */
+h1 {
+    color: #00509e;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #0077b6;
+    margin-top: 20px;
+}
+
+/* Paragraph */
+p {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1em;
+}
+
+/* Image */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Link */
+a {
+    color: #0077b6;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover {
+    color: #023e8a;
+    text-decoration: underline;
+}
+
+/* Ordered List */
+ol {
+    max-width: 500px;
+    margin: 0 auto;
+    padding-left: 20px;
+    font-size: 1.1em;
+}
+
+/* Form */
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background: #0077b6;
+    border: none;
+    color: white;
+    font-size: 1.1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: #023e8a;
+}

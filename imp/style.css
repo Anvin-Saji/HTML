@@ -1,0 +1,7 @@
+.one{color: aqua;}
+.two{color: rgb(255, 0, 43);}
+#l{color: brown;}
+h1,h2{color: green;}
+input[type="email"]{border: 1px solid red;}
+input[type=text]{border: 1px solid rgb(166, 255, 0);}
+p::first-letter{font-size: 2em;}

@@ -1,0 +1,73 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* Main grid container */
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "section1 aside"
+    "section2 aside"
+    "section3 aside"
+    "section4 aside"
+    "section5 aside"
+    "footer footer";
+  grid-template-columns: 2fr 1fr;
+  gap: 10px;
+  padding: 10px;
+}
+
+/* Grid areas */
+header   { grid-area: header; background: #f2f2f2; padding: 10px; }
+.section1 { grid-area: section1; background: #e6f7ff; padding: 10px; }
+.section2 { grid-area: section2; background: #e6ffe6; padding: 10px; }
+.section3 { grid-area: section3; background: #fff0e6; padding: 10px; }
+.section4 { grid-area: section4; background: #f9e6ff; padding: 10px; }
+.section5 { grid-area: section5; background: #ffffe6; padding: 10px; }
+aside    { grid-area: aside; background: #d9d9d9; padding: 10px; }
+footer   { grid-area: footer; background: #ccc; padding: 10px; text-align: center; }
+
+/* Flexbox demo inside section1 */
+.flex-demo {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.flex-demo .box {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 6px;
+}
+
+.box1 { background: #007bff; }
+.box2 { background: #28a745; }
+.box3 { background: #dc3545; }
+
+/* Responsive: stack layout on small screens */
+@media (max-width: 700px) {
+  .container {
+    grid-template-areas:
+      "header"
+      "section1"
+      "section2"
+      "section3"
+      "section4"
+      "section5"
+      "aside"
+      "footer";
+    grid-template-columns: 1fr;
+  }
+}
